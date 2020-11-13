@@ -7,8 +7,7 @@ remeber you need npcap, if you do decide to download this for what ever reason, 
 
 ```
 Packaging: 
-electron-packager . --platform=win32 --arch=x64 "CPR Card Revealer" --asar --icon="C:\Users\Gues
-t1\Desktop\Projects\CPR Card Reveal\src\img\ico-ver.ico"
+electron-packager . --platform=win32 --arch=x64 "CPR Card Revealer" --asar --icon="C:\Users\Guest1\Desktop\Projects\CPR Card Reveal\src\img\ico-ver.ico"
 
 Then you can turn it into an installer, the end, happy happy. (strongly recommend you just download exe)
 ```
