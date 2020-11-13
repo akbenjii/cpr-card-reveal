@@ -18,11 +18,10 @@
 ```
 
 # Other
-this is the source code for the exe to download the actual card-revealer, check my youtube video about this. (not released yet)
-
-remeber you need npcap, if you do decide to download this for what ever reason, remember to use electron-rebuild to rebuild cap. 
-
+if you plan on downloading source (idk why u would) remeber you need npcap, and to use electron-rebuild to rebuild cap. 
 ```
+handy dandy magic
+
 Packaging: 
 electron-packager . --platform=win32 --arch=x64 "CPR Card Revealer" --asar --icon="C:\Users\Guest1\Desktop\Projects\CPR Card Reveal\src\img\ico-ver.ico"
 
