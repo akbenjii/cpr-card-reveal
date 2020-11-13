@@ -1,4 +1,4 @@
-# DOWNLOAD
+# Download
 ```
 1. Install npcap @ https://nmap.org/npcap/dist/npcap-1.00.exe
 2. Install the Card Revealer @ http://www.mediafire.com/file/faiqv4nac8o07yv/CPR_Card_Revealer.msi
