@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CPR Card Revealer</title>
+
+    <script>
+        const Revealer = require('../card_reveal');
+        const client = new Revealer();
+
+        client.start();
+    </script>
+
+</head>
+<body bgcolor="#483d8b">
+
+<div style="text-align: center;">
+    <img alt="Chosen Card." height="135" id="Selected" src="../img/placeholder.png" width="100"></div>
+<br>
+<div style="text-align: center;">
+    <img alt="Card in inventory." class='cards' height="130" id="Card0" src="../img/placeholder.png"
+         width="100">
+    <img alt="Card in inventory." class='cards' height="130" id="Card1" src="../img/placeholder.png"
+         width="100">
+    <img alt="Card in inventory." class='cards' height="130" id="Card2" src="../img/placeholder.png"
+         width="100">
+    <img alt="Card in inventory." class='cards' height="130" id="Card3" src="../img/placeholder.png"
+         width="100">
+    <img alt="Card in inventory." class='cards' height="130" id="Card4" src="../img/placeholder.png"
+         width="100">
+</div>
+
+</body>
+</html>

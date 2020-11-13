@@ -1,0 +1,21 @@
+{
+  "name": "CPR-Card-Revealer",
+  "version": "1.0.0",
+  "description": "reveal opponents cards on card-jitsu",
+  "main": "index.js",
+  "dependencies": {
+    "cap": "^0.2.1"
+  },
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-packager": "^15.1.0",
+    "electron-rebuild": "^2.3.2",
+    "electron-wix-msi": "^3.0.4",
+    "exe-icon-extractor": "^1.0.8"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "benji",
+  "license": "ISC"
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>CPR Card Revealer</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="./css/menu.css" rel="stylesheet" type="text/css"/>
+</head>
+<script>
+    const util = require('../handlers/ipv4');
+
+    function validate() {
+        let ipv4 = document.getElementById("name").value;
+        return util._check(ipv4);
+    }
+
+</script>
+<!-- html is gay made this in webflow if u wanna make it nicer definitely do pls -->
+<body class="body">
+<div class="container w-container">
+    <div class="form-block w-form">
+        <form class="form form-2" data-name="Email Form" id="email-form" name="email-form"
+              onsubmit="return validate();">
+            <label class="ipv4-address" for="name">IPv4 Address:</label><input class="ipv4_addr w-input"
+                                                                               data-name="Name"
+                                                                               id="name" maxlength="50"
+                                                                               name="name" type="text"/>
+
+            <label class="title">Cpr Card Revealer</label>
+            <input class="login w-button" formaction="./reveal_gui.html" id="submit" type="submit" value="Start"/>
+            <label class="title title_top">CPR Card Revealer</label>
+            <div class="text-block">❤ Created by benji#1337 ❤</div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
