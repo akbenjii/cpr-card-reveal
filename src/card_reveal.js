@@ -31,7 +31,7 @@ module.exports = class Revealer {
             this.invID = deconstructedPacket[6]; // the inventory # of opponent's selected card.
 
             this.updateImage(`Card${this.invID}`, `../img/placeholder.png`);
-            return this.updateImage('Selected', `../cards/${this.cards[this.invID]}.png`);
+            return this.updateImage('Selected', `https://raw.githubusercontent.com/akbenjii/cpr-card-reveal/main/src/cards/${this.cards[this.invID]}.png`)
         } else if (action === 'deal') return this._handle_deal(deconstructedPacket[6]);
 
     };
@@ -46,7 +46,7 @@ module.exports = class Revealer {
         this.updateID(this.invID, inventoryNum);
         delete this.cards[this.invID];
 
-        this.updateImage(`Card${inventoryNum}`, `../cards/${cardID}.png`);
+        this.updateImage(`Card${inventoryNum}`, `https://raw.githubusercontent.com/akbenjii/cpr-card-reveal/main/src/cards/${cardID}.png`);
         return this.cards[inventoryNum] = cardID; // '5': 34
     };
 
@@ -96,11 +96,11 @@ module.exports = class Revealer {
         };
 
         // set card images of opponents cards for the gui.
-        this.updateImage('Card0', `../cards/${cards[0]}.png`);
-        this.updateImage('Card1', `../cards/${cards[1]}.png`);
-        this.updateImage('Card2', `../cards/${cards[2]}.png`);
-        this.updateImage('Card3', `../cards/${cards[3]}.png`);
-        this.updateImage('Card4', `../cards/${cards[4]}.png`);
+        this.updateImage('Card0', `https://raw.githubusercontent.com/akbenjii/cpr-card-reveal/main/src/cards/${cards[0]}.png`);
+        this.updateImage('Card1', `https://raw.githubusercontent.com/akbenjii/cpr-card-reveal/main/src/cards/${cards[1]}.png`);
+        this.updateImage('Card2', `https://raw.githubusercontent.com/akbenjii/cpr-card-reveal/main/src/cards/${cards[2]}.png`);
+        this.updateImage('Card3', `https://raw.githubusercontent.com/akbenjii/cpr-card-reveal/main/src/cards/${cards[3]}.png`);
+        this.updateImage('Card4', `https://raw.githubusercontent.com/akbenjii/cpr-card-reveal/main/src/cards/${cards[4]}.png`);
 
         this.collected = true;
         console.log('Collected!');
