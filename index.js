@@ -3,7 +3,7 @@ const {app, BrowserWindow} = require('electron');
 function createWindow() {
     const win = new BrowserWindow({
         width: 600,
-        height: 375,
+        height: 400,
         title: 'CPR Card Revealer',
         icon: './src/img/ico-ver.ico',
         webPreferences: {
