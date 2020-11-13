@@ -30,3 +30,7 @@ Then you can turn it into an installer, the end, happy happy. (strongly recommen
 
 Links: 
 https://nmap.org/npcap/
+
+# Support
+If you need support, join this discord!
+https://discord.gg/XsgAd3h4yw
