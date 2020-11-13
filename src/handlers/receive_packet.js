@@ -6,6 +6,8 @@ const protocol = decoders.PROTOCOL;
 
 const c = new Cap();
 module.exports = class receivePacket extends EventEmitter {
+    connected = false;
+
     constructor(ipv4) {
         super();
         this.interface = ipv4;
@@ -31,6 +33,12 @@ module.exports = class receivePacket extends EventEmitter {
                         data -= ret.hdrlen;
 
                         let packet = buffer.toString('binary', ret.offset, ret.offset + data); // received packet.
+                        if (this.connected === false && packet.startsWith('%xt%')) {
+                            let element = document.getElementById('connection');
+                            element.innerHTML = 'Connected';
+                            element.style.color = 'green';
+                            this.connected = true;
+                        }
                         if (packet.startsWith('%xt%jr%') || packet.startsWith('%xt%jz%') || packet.startsWith('%xt%zm%')) return this.emit('packet', packet); // send packet to card reveal
 
                     } else console.log(`Unsupported IPv4 protocol: ${protocol.IP[ret.info.protocol]}`);
