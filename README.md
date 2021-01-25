@@ -1,3 +1,6 @@
+<h1 align="center"> DEPRECATED </h1>
+<p align="center"> Since January 12th, 2021, the card revealer will no longer work or be supported. </p>
+
 # Download
 ```
 1. Install npcap @ https://nmap.org/npcap/dist/npcap-1.00.exe
